@@ -1,0 +1,11 @@
+{
+  "name": "job_screening_result",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "score": { "type": "integer", "minimum": 1, "maximum": 10 },
+      "reason": { "type": "string", "maxLength": 50 }
+    },
+    "required": ["score", "reason"]
+  }
+}
